@@ -1,12 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Portfólio Thiago Zani</h1>
-    <img src="./assets/img/thiago_background.png" alt="foto Thiago sorrindo" width="400px">
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfólio Thiago Zani</title>
+    <!--GOOGLE FONT -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet" /> -->
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAV SECTION -->
+    <div id="navbar-placeholder"></div>
+
+    <script>
+      // Carrega o conteúdo da navbar dinamicamente
+      fetch('./templates/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
+    <!--END NAV SECTION -->
+
+    <!-- HEADER SECTION -->
+    <div id="header-section">
+      <div class="container">
+        <div class="row centered">
+          <div class="header-text col-md-12">
+            <h1><strong> Thiago F. S. Zani</strong></h1>
+            <h2 class="mt-5">Desenvolvedor Web / Mobile</h2>
+            <a href="#sobre-section">
+              <i class="fa fa-angle-double-down fa-5x down-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END HEADER SECTION -->
+    <!--sobre SECTION -->
+    <div id="sobre-section">
+      <div class="container">
+        <div class="row text-center ">
+          <div data-scrollreveal="enter top and move 100px, wait 0.3s" class="main-top-margin">
+            <h1>Quem sou eu?</h1>
+            <h5>
+              Ex-professor de Educação Física e Tecnologia, agora desenvolvedor
+              de software em formação. Atuo como estagiário em uma empresa líder
+              em defesa, criando soluções inovadoras com tecnologias
+              estratégicas. Bolsista em projetos de destaque na FATEC e INPE,
+              com pesquisa indicada ao 22º Prêmio Destaque CNPq 2024.
+            </h5>
+          </div>
+        </div>
+        <!-- ./ Main Heading-->
+        <div class="row MB-5 text-center">
+          <div
+            class="col-md-2"
+            data-scrollreveal="enter left and move 100px, wait 0.4s"
+          >
+            <img
+              class="img-circle"
+              src="assets/img/thiago_background.png"
+              alt=""
+              width="200"
+            />
+            <h4><strong>Thiago F. S. Zani</strong></h4>
+            <p>Desenvolvedor Web e Mobile</p>
+            <p>
+              <a href="https://github.com/zani19" target="_blank"
+                ><i class="fa fa-github-square fa-2x color-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/thiago-zani-1b8503249/"
+                target="_blank"
+                ><i class="fa fa-linkedin-square fa-2x color-linkedin"></i
+              ></a>
+            </p>
+          </div>
+
+          <div
+            class="col-md-10 col-sm-9 col-md-offset-1 text-justify main-low-margin"
+            data-scrollreveal="enter right and move 100px, wait 0.4s"
+          >
+            <h3>Perfil</h3>
+            <p>
+              Meu nome é Thiago Zani, um profissional em constante evolução, com
+              uma trajetória marcada pela diversidade e pela busca por
+              conhecimento. Sou formado em Educação Física pela Unesp de Bauru,
+              onde construí uma base sólida em educação e prática esportiva.
+              Atuei como professor de Educação Física na rede pública de ensino
+              de São Paulo e em instituições renomadas, como os colégios Univap
+              - Unidade Aquarius e Centro.
+            </p>
+            <p>
+              Hoje, estou imerso no universo da tecnologia, cursando o 6º
+              semestre de Desenvolvimento de Software Multiplataforma na FATEC
+              de São José dos Campos. Minha transição para a área de tecnologia
+              tem sido enriquecida por experiências significativas, como minha
+              atuação como bolsista do Centro Paula Souza em 2023, onde
+              participei de um projeto de monitoria focado na experiência do
+              usuário, ampliando minha compreensão sobre design centrado no
+              usuário.
+            </p>
+            <p>
+              Além disso, de julho de 2023 a outubro de 2024, integrei um
+              projeto de Iniciação Científica com bolsa CNPq no Instituto
+              Nacional de Pesquisas Espaciais (INPE), sob a orientação do Prof.
+              Dr. Fabricio G. M. Carvalho. Neste projeto, apliquei meus
+              conhecimentos em desenvolvimento de software para contribuir com
+              pesquisas científicas de ponta, explorando novas fronteiras
+              tecnológicas. O projeto foi indicado ao 22º Prêmio Destaque na
+              Iniciação Científica e Tecnológica do CNPq (Edição 2024), um
+              reconhecimento significativo ao trabalho desenvolvido.
+            </p>
+            <p>
+              Atualmente, atuo como estagiário em uma empresa líder no setor de
+              defesa, onde participo do desenvolvimento de soluções inovadoras e
+              estratégicas, utilizando tecnologias livres de embargos comerciais
+              e colaborando em projetos customizados de alta complexidade. Minha
+              jornada reflete uma combinação única de habilidades interpessoais,
+              experiência educacional e competências técnicas, e estou animado
+              para continuar crescendo e impactando o mundo da tecnologia com
+              soluções criativas e eficientes.
+            </p>
+          </div>
+        </div>
+        <!-- ./ Row Content-->
+      </div>
+    </div>
+    <!-- END SOBRE SECTION -->
+
+    <!--WORK/PROJETOS SECTION -->
+    
+        
+        <div id="projetos-section">
+            <div class="container">
+              <div class="row main-top-margin text-center">
+                <div class="col-md-offset-2">
+                  <h1>Projetos</h1>
+                  <h5>
+                    Aqui você encontrará uma seleção dos meus trabalhos mais relevantes, organizados em três categorias: projetos acadêmicos, profissionais e pessoais. Cada projeto representa um desafio único e uma oportunidade de crescimento contínuo.
+                    <p>Clique nas imagens para saber mais sobre cada projeto.</p>
+                  </h5>
+                </div>
+              </div>
+              <hr />
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/img/projects/01-OCTOPLUS_BANK/OCTO_CARD.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Projetos Acadêmicos</h3>
+                      <h4>Soluções desenvolvidas durante minha formação, com foco em aprendizagem e inovação</h4>
+                      <button type="button" class="btn btn-primary" onclick="window.location.href='pages/projects.html'">Clique para visualizar</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Projetos Profissionais</h5>
+                      <p>Projetos reais onde apliquei meus conhecimentos em ambientes corporativos</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Projetos Pessoais</h5>
+                      <p>Iniciativas próprias que demonstram minha paixão por tecnologia e criatividade</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!--END WORK/projetos SECTION -->
+    <!--contato SECTION -->
+    <div id="contato-section">
+      <div class="container">
+        <div class="row main-top-margin text-center">
+          <div
+            class="col-md-8 col-md-offset-2"
+            data-scrollreveal="enter top and move 100px, wait 0.3s"
+          >
+            <h1>Contato</h1>
+            <h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec
+              nisl odio. Mauris vehicula at nunc id posuere.
+            </h4>
+          </div>
+        </div>
+        <!-- ./ Main Heading-->
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div
+              class="col-md-6"
+              data-scrollreveal="enter left and move 100px, wait 0.4s"
+            >
+              <h3>Localização</h3>
+              <hr />
+              <p>
+               São José dos Campos - SP
+              </p>
+            </div>
+            <div
+              class="col-md-6"
+              data-scrollreveal="enter right and move 100px, wait 0.4s"
+            >
+              <h3>Drop a Line or Hire Me</h3>
+              <hr />
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        required="required"
+                        placeholder="Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        required="required"
+                        placeholder="Email address"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        required="required"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Ref. (IF any)"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        required="required"
+                        class="form-control"
+                        rows="3"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">
+                        Submit Request
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- ./ Row Content-->
+      </div>
+    </div>
+    <!--END contato SECTION -->
+    <!--FOOTER SECTION -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          &copy; 2014 www.yourdomain.com | All Right Reserved
+        </div>
+      </div>
+    </div>
+    <!--END FOOTER SECTION -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+<!--     <script src="assets/js/bootstrap.min.js"></script>
+ -->    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- SCROLL REVEL LIBRARY FOR SCROLLING ANIMATIONS-->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!-- CUSTOM SCRIPT-->
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>
