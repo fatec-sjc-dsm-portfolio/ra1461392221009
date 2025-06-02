@@ -12,202 +12,236 @@
    GENERAL STYLES   
    ============================================================*/
 body {
-   font-family:'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;   
-/*     margin-top: 40px;
- */    line-height:16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  overflow-x: hidden;
+  line-height: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-      font-family:'Open Sans', sans-serif;
-    font-weight: 500;
-   line-height:40px;
-   
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  line-height: 40px;
 }
 
 h1 {
-    color:#00aad1;
-    font-weight: 700;
+  color: #00aad1;
+  font-weight: 700;
 }
 .text-center {
-    text-align: center; 
+  text-align: center;
 }
 
 .main-top-margin {
-     margin-top: 75px;
-}
-.main-low-margin {
-     margin-top: 55px;
+  margin-top: 20px;
 }
 
-a,a:hover {
-    text-decoration:none;
+.main-low-margin {
+  margin-top: 30px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }
 
 p {
-    line-height: 30px;
-    margin-bottom: 23px;
+  line-height: 30px;
+  margin-bottom: 23px;
 }
 
 .img-margin-product {
-    margin-top:30px;
+  margin-top: 30px;
 }
 .bottam-pad {
-     padding-bottom:40px;
+  padding-bottom: 40px;
 }
 .text-justify {
-    text-align:justify;
+  text-align: justify;
 }
+
+.container {
+  padding: 0;
+}
+/* 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
 /* ==========================================================================
    COLOR CODES
    ========================================================================== */
 
 .color-red {
-    color:#ff0000;
+  color: #ff0000;
 }
 
 .color-green {
-    color:#07BB00;
+  color: #07bb00;
 }
 
 .color-light-blue {
-    color:#BB00BB;
+  color: #bb00bb;
 }
 
 .color-blue {
-    color:#0052FF;
+  color: #0052ff;
 }
 .color-brown {
-    color:#EB8F2D;
+  color: #eb8f2d;
 }
 .color-black {
-    color:#000000;
+  color: #000000;
 }
 
 /* ==========================================================================
    NAVBAR SECTION
    ========================================================================== */
-   .navbar-nav .nav-item {
-    margin-right: 40px;
-    font-size: large;
-  }
+.navbar-nav .nav-item {
+  margin-right: 40px;
+  font-size: large;
+}
 /* ==========================================================================
    HEADER SECTION
    ========================================================================== */
 
-   #header-section {
-    position: relative;
-    background: url(../img/header.jpg) no-repeat center top;
-    background-size: cover;
-    background-position: center center; 
-    text-align: center;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
+#header-section {
+  position: relative;
+  background: url(../img/header.jpg) no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.header-text {margin-bottom: 200px;}
-
+/* .header-text {margin-bottom: 200px;}
+ */
 #header-section h1 {
-    
-	color: white;
-	font-size: 65px;
-	font-weight: 900;
-	letter-spacing: 4px;
-    line-height:70px;
+  color: white;
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  line-height: 70px;
 }
 
 #header-section h2 {
-	color: white;
-	font-size: 40px;
-	font-weight: 900;
-	letter-spacing: 4px;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
 .down-icon {
-    color:white;
-    font-weight:900;
+  color: white;
+  font-weight: 900;
 }
 /* ==========================================================================
    SOBRE SECTION
    ========================================================================== */
 
 #sobre-section {
-    background-color: #FAFAFA;
-   
+  background-color: #fafafa;
 }
-
 
 /*==========================================
    SOCIAL ICON STYLES
 =====================================================*/
 
 .color-github {
-     color:black;    
+  color: black;
 }
 .color-linkedin {
-     color:#007bb6;
+  color: #007bb6;
 }
 
 /* ==========================================================================
    PROJETOS SECTION
    ========================================================================== */
-   #projetos-section {
-    min-height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribui o conteúdo verticalmente */
-    padding: 50px 0; /* Espaçamento superior e inferior */
-    text-align: center;
-  }
-  
-  #carouselExampleCaptions {
-    max-height: 400px; /* Define a altura máxima do carrossel */
-    overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
-  }
-  
-  #carouselExampleCaptions img {
-    height: 100%; /* Ajusta a altura das imagens ao carrossel */
-    object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente */
-  }
+#projetos-section {
+  min-height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo verticalmente */
+  padding: 10px 0; /* Espaçamento superior e inferior */
+  text-align: center;
+}
 
+#carouselExampleCaptions {
+  max-height: 400px; /* Define a altura máxima do carrossel */
+  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
+}
+
+#carouselExampleCaptions img {
+  height: 100%; /* Ajusta a altura das imagens ao carrossel */
+  object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente */
+}
+
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  max-height: 80vh;
+  margin: 0 auto;
+  position: relative;
+  background: #fff; /* Fundo neutro */
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* ou cover, se preferir menos distorção */
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
 
 /* ===========================================================
    BOOTSTRAP ELEMENTS CHANGES   
    ============================================================*/
 .navbar {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .navbar-inverse {
-	background: #000000;
-border-color: #5D5B66;
+  background: #000000;
+  border-color: #5d5b66;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ffffff;
+  background: #ffffff;
 }
 
 .navbar-inverse .navbar-brand {
-	color: #ffffff;
-	font-weight: bolder;
-	font-size: 25px;
-    font-weight:900;
-	letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 .navbar-inverse :hover .navbar-brand:hover {
-	color: #ffffff;	
+  color: #ffffff;
 }
 .navbar-inverse .navbar-nav > li > a {
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* ==========================================================================
@@ -215,18 +249,15 @@ color: #FFFFFF;
    ========================================================================== */
 
 #contato-section {
-    background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 /* ==========================================================================
    FOOTER SECTION
    ========================================================================== */
-   
 
 #footer {
-    background-color: #2B4369; 
-    color: #fff; 
-    text-align: right; 
-    padding: 10px 30px 10px 30px;
+  background-color: #2b4369;
+  color: #fff;
+  text-align: right;
+  padding: 10px 30px 10px 30px;
 }
-
-
