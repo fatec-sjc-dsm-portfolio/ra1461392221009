@@ -261,3 +261,49 @@ img {
   text-align: right;
   padding: 10px 30px 10px 30px;
 }
+
+/* ==========================================================================
+   CARDS PROJECTS SECTION
+   ========================================================================== */
+
+.info-card {
+  background-color: #ffffff; /* Cor de fundo do card */
+  border-radius: 10px;       /* Cantos arredondados */
+  padding: 25px;             /* Espaçamento interno */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  margin-bottom: 20px;       /* Margem inferior para separar dos próximos elementos */
+  height: 100%;              /* Garante que cards na mesma linha tenham altura similar */
+  display: flex;             /* Para alinhar o conteúdo interno se necessário */
+  flex-direction: column;    /* Organiza o conteúdo em coluna */
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px; /* Espaço abaixo do título do card */
+  color: #007bff; /* Cor do título, pode ser ajustada */
+  font-size: 1.5rem;
+}
+
+.info-card ul {
+  padding-left: 20px; /* Ajusta o padding da lista */
+  flex-grow: 1; /* Permite que a lista ocupe o espaço disponível */
+  list-style-type: none; /* Remove os marcadores padrão se desejar, ou ajuste conforme o gosto */
+}
+
+.info-card ul li {
+  margin-bottom: 10px; /* Aumenta o espaço entre os itens da lista */
+}
+
+.info-card ul li:last-child {
+  margin-bottom: 0; /* Remove a margem do último item para não criar espaço extra no final */
+}
+
+.info-card p {
+  flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
+  margin-bottom: 10px; /* Adiciona um pouco de espaço entre parágrafos, se houver múltiplos */
+  text-align: justify; /* Justifica o texto do parágrafo */
+}
+
+.info-card p:last-child {
+  margin-bottom: 0; /* Remove a margem do último parágrafo */
+}
