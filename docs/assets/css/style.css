@@ -173,22 +173,36 @@ img {
    PROJETOS SECTION
    ========================================================================== */
 #projetos-section {
-  min-height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribui o conteúdo verticalmente */
-  padding: 10px 0; /* Espaçamento superior e inferior */
+  justify-content: space-between;
+  padding: 10px 0;
   text-align: center;
 }
 
 #carouselExampleCaptions {
-  max-height: 400px; /* Define a altura máxima do carrossel */
-  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
+  max-height: 400px;
+  overflow: hidden;
 }
 
 #carouselExampleCaptions img {
-  height: 100%; /* Ajusta a altura das imagens ao carrossel */
-  object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente */
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.carousel-caption h3,
+.carousel-caption h5 {
+  color: #fff !important;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 2px #fff;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: inline-block;
 }
 
 .carousel-inner,
@@ -268,13 +282,13 @@ img {
 
 .info-card {
   background-color: #ffffff; /* Cor de fundo do card */
-  border-radius: 10px;       /* Cantos arredondados */
-  padding: 25px;             /* Espaçamento interno */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 25px; /* Espaçamento interno */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
-  margin-bottom: 20px;       /* Margem inferior para separar dos próximos elementos */
-  height: 100%;              /* Garante que cards na mesma linha tenham altura similar */
-  display: flex;             /* Para alinhar o conteúdo interno se necessário */
-  flex-direction: column;    /* Organiza o conteúdo em coluna */
+  margin-bottom: 20px; /* Margem inferior para separar dos próximos elementos */
+  height: 100%; /* Garante que cards na mesma linha tenham altura similar */
+  display: flex; /* Para alinhar o conteúdo interno se necessário */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
 }
 
 .info-card h3 {
@@ -305,13 +319,13 @@ img {
 }
 
 .info-card p:last-child {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .project-index-nav {
-  background-color: #e9ecef; 
+  background-color: #e9ecef;
   padding: 0.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,.075);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -323,13 +337,13 @@ img {
 
 .project-index-nav .nav-link:hover,
 .project-index-nav .nav-link:focus {
-  color: #003d80; 
+  color: #003d80;
   text-decoration: none;
 }
 
 /* Estilos para as seções de projeto */
 .project-section {
-  padding-top: 2.5rem; 
+  padding-top: 2.5rem;
   padding-bottom: 3rem;
 }
 
