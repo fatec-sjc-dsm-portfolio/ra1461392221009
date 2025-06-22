@@ -18,6 +18,9 @@ body {
   color: #000;
   overflow-x: hidden;
   line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -57,12 +60,6 @@ p {
   margin-bottom: 23px;
 }
 
-.img-margin-product {
-  margin-top: 30px;
-}
-.bottam-pad {
-  padding-bottom: 40px;
-}
 .text-justify {
   text-align: justify;
 }
@@ -70,12 +67,7 @@ p {
 .container {
   padding: 0;
 }
-/* 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-} */
+
 /* ==========================================================================
    COLOR CODES
    ========================================================================== */
@@ -130,8 +122,10 @@ img {
   -o-background-size: cover;
   background-size: cover;
 }
-/* .header-text {margin-bottom: 200px;}
- */
+.header-text {
+  margin-bottom: 300px;
+}
+
 #header-section h1 {
   color: white;
   font-size: 65px;
@@ -156,6 +150,7 @@ img {
 
 #sobre-section {
   background-color: #fafafa;
+  padding: 76px 0;
 }
 
 /*==========================================
@@ -177,7 +172,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 76px 0;
   text-align: center;
 }
 
@@ -187,8 +182,8 @@ img {
 }
 
 #carouselExampleCaptions img {
-  height: 100%; 
-  object-fit: cover; 
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel-caption h3,
@@ -210,7 +205,7 @@ img {
   width: 100%;
   max-width: 800px;
   height: 600px;
-  max-height: 80vh;
+  max-height: 70vh;
   margin: 0 auto;
   position: relative;
   background: #fff; /* Fundo neutro */
@@ -232,7 +227,7 @@ img {
    BOOTSTRAP ELEMENTS CHANGES   
    ============================================================*/
 .navbar {
-  font-size: 14px;
+  font-size: 100px;
 }
 
 .navbar-inverse {
@@ -264,6 +259,7 @@ img {
 
 #contato-section {
   background-color: #fafafa;
+  padding: 76px 0;
 }
 /* ==========================================================================
    FOOTER SECTION
@@ -356,9 +352,7 @@ img {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  
 }
 
 #projetos-section-container {
