@@ -1,0 +1,386 @@
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/* ===========================================================
+   GENERAL STYLES   
+   ============================================================*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  overflow-x: hidden;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+h1 {
+  color: #00aad1;
+  font-weight: 700;
+}
+.text-center {
+  text-align: center;
+}
+
+.main-top-margin {
+  margin-top: 20px;
+}
+
+.main-low-margin {
+  margin-top: 30px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 30px;
+  margin-bottom: 23px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.container {
+  padding: 0;
+}
+
+/* ==========================================================================
+   COLOR CODES
+   ========================================================================== */
+
+.color-red {
+  color: #ff0000;
+}
+
+.color-green {
+  color: #07bb00;
+}
+
+.color-light-blue {
+  color: #bb00bb;
+}
+
+.color-blue {
+  color: #0052ff;
+}
+.color-brown {
+  color: #eb8f2d;
+}
+.color-black {
+  color: #000000;
+}
+
+/* ==========================================================================
+   NAVBAR SECTION
+   ========================================================================== */
+.navbar-nav .nav-item {
+  margin-right: 40px;
+  font-size: large;
+}
+/* ==========================================================================
+   HEADER SECTION
+   ========================================================================== */
+
+#header-section {
+  position: relative;
+  background: url(../img/header.jpg) no-repeat center top;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header-text {
+  margin-bottom: 300px;
+}
+
+#header-section h1 {
+  color: white;
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  line-height: 70px;
+}
+
+#header-section h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+.down-icon {
+  color: white;
+  font-weight: 900;
+}
+/* ==========================================================================
+   SOBRE SECTION
+   ========================================================================== */
+
+#sobre-section {
+  background-color: #fafafa;
+  padding: 76px 0;
+}
+
+/*==========================================
+   SOCIAL ICON STYLES
+=====================================================*/
+
+.color-github {
+  color: black;
+}
+.color-linkedin {
+  color: #007bb6;
+}
+
+/* ==========================================================================
+   PROJETOS SECTION
+   ========================================================================== */
+#projetos-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 76px 0;
+  text-align: center;
+}
+
+#carouselExampleCaptions {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+#carouselExampleCaptions img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption h3,
+.carousel-caption h5 {
+  color: #fff !important;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 2px #fff;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: inline-block;
+}
+
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  max-height: 70vh;
+  margin: 0 auto;
+  position: relative;
+  background: #fff; /* Fundo neutro */
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* ou cover, se preferir menos distorção */
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* ===========================================================
+   BOOTSTRAP ELEMENTS CHANGES   
+   ============================================================*/
+.navbar {
+  font-size: 100px;
+}
+
+.navbar-inverse {
+  background: #000000;
+  border-color: #5d5b66;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.navbar-inverse :hover .navbar-brand:hover {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
+
+#contato-section {
+  background-color: #fafafa;
+  padding: 76px 0;
+}
+/* ==========================================================================
+   FOOTER SECTION
+   ========================================================================== */
+
+#footer {
+  background-color: #2b4369;
+  color: #fff;
+  text-align: right;
+  padding: 10px 30px 10px 30px;
+}
+
+/* ==========================================================================
+   CARDS PROJECTS SECTION
+   ========================================================================== */
+
+.info-card {
+  background-color: #ffffff; /* Cor de fundo do card */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 25px; /* Espaçamento interno */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  margin-bottom: 20px; /* Margem inferior para separar dos próximos elementos */
+  height: 100%; /* Garante que cards na mesma linha tenham altura similar */
+  display: flex; /* Para alinhar o conteúdo interno se necessário */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+.info-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px; /* Espaço abaixo do título do card */
+  color: #007bff; /* Cor do título, pode ser ajustada */
+  font-size: 1.5rem;
+}
+
+.info-card ul {
+  padding-left: 20px; /* Ajusta o padding da lista */
+  flex-grow: 1; /* Permite que a lista ocupe o espaço disponível */
+  list-style-type: none; /* Remove os marcadores padrão se desejar, ou ajuste conforme o gosto */
+}
+
+.info-card ul li {
+  margin-bottom: 10px; /* Aumenta o espaço entre os itens da lista */
+}
+
+.info-card ul li:last-child {
+  margin-bottom: 0; /* Remove a margem do último item para não criar espaço extra no final */
+}
+
+.info-card p {
+  flex-grow: 1; /* Permite que o parágrafo ocupe o espaço disponível */
+  margin-bottom: 10px; /* Adiciona um pouco de espaço entre parágrafos, se houver múltiplos */
+  text-align: justify; /* Justifica o texto do parágrafo */
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+.project-index-nav {
+  background-color: #e9ecef;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  border-bottom: 1px solid #dee2e6;
+}
+
+.project-index-nav .nav-link {
+  color: #0056b3;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.project-index-nav .nav-link:hover,
+.project-index-nav .nav-link:focus {
+  color: #003d80;
+  text-decoration: none;
+}
+
+/* Estilos para as seções de projeto */
+.project-section {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.project-section-odd {
+  background-color: #fafafa;
+}
+
+.project-section-even {
+  background-color: #ffffff;
+}
+
+#projetos-section-container {
+  flex-grow: 1;
+}
+
+/* ==========================================================================
+   CAROUSEL SECTION
+   ========================================================================== */
+
+#midtiCarousel .carousel-item {
+  background: transparent;
+  text-align: center;
+  min-height: 350px;
+  position: relative; /* Necessário para centralização absoluta */
+}
+
+#midtiCarousel .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 90%;
+  height: auto;
+  width: auto;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.carousel-img-small {
+  max-width: 600px;
+  max-height: 450px;
+}
